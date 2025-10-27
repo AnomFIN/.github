@@ -29,9 +29,8 @@ Before contributing, understand our core principles:
 git clone https://github.com/YOUR_USERNAME/.github.git
 cd .github
 
-# Run tests
+# Run the demo (serves as integration test)
 npm start
-npm test
 
 # Run examples
 node examples.js

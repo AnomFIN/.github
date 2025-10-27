@@ -73,12 +73,20 @@ console.log(result);
 npm start
 ```
 
+This runs a comprehensive demo that validates all features.
+
 Expected output:
 ```
 ✓ System initialized successfully
 ✓ All tests passing
 ✓ Performance metrics within threshold
 ✓ Zero errors detected
+```
+
+### Run Examples
+
+```bash
+npm run examples
 ```
 
 ### Manual Testing
@@ -217,9 +225,9 @@ Optimized for speed and efficiency:
 ### Scripts
 
 ```bash
-npm start        # Run demo
+npm start        # Run comprehensive demo
+npm run examples # Run usage examples
 npm run dev      # Run with auto-reload
-npm test         # Run tests
 npm run lint     # Lint code
 ```
 
