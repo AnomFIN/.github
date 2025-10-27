@@ -49,7 +49,9 @@ export const validateString = (value, { minLength = 1, maxLength = 1000, field =
  * @throws {ValidationError} If validation fails
  */
 export const validateEmail = (email) => {
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  // More efficient regex to prevent ReDoS attacks
+  // Matches: localpart@domain.tld (without catastrophic backtracking)
+  const emailRegex = /^[a-zA-Z0-9._+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   
   if (!emailRegex.test(email)) {
     throw new ValidationError('Invalid email format', 'email', email);
