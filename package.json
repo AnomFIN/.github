@@ -1,0 +1,25 @@
+{
+  "name": "anomfin-core",
+  "version": "1.0.0",
+  "description": "AnomFIN — the neural network of innovation.",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "node --test src/**/*.test.js",
+    "lint": "echo 'Linting...' && node src/utils/validator.js"
+  },
+  "keywords": [
+    "anomfin",
+    "innovation",
+    "neural-network",
+    "futuristic",
+    "minimalist"
+  ],
+  "author": "AnomFIN",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
